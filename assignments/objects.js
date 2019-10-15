@@ -18,65 +18,64 @@ const example = {
 };
 
 // Write your intern objects here:
-const intern = [
-	{
-		id: 0,
-		firstName: "Mitzi",
-		email: "mmelloy0@psu.edu",
-		gender: "F"
-	},
-	{
-		id: 1,
-		firstName: "Kennan",
-		email: "kdiben1@tinypic.com",
-		gender: "M",
-		speak: function() {
-			return "Hello, my name is Kennan!";
-		}
-	},
-	{
-		id: 2,
-		firstName: "Keven",
-		email: "kmummery2@wikimedia.org",
-		gender: "M"
-	},
-	{
-		id: 3,
-		firstName: "Gannie",
-		email: "gmartinson3@illinois.edu",
-		gender: "M"
-	},
-	{
-		id: 4,
-		firstName: "Antonietta",
-		email: "adaine5@samsung.com",
-		gender: "F",
-		multiplyNums: function(num1, num2) {
-			return num1 * num2;
-		}
+const Mitzi = {
+	id: 0,
+	firstName: "Mitzi",
+	email: "mmelloy0@psu.edu",
+	gender: "F"
+};
+
+const Kennan = {
+	id: 1,
+	firstName: "Kennan",
+	email: "kdiben1@tinypic.com",
+	gender: "M",
+	speak() {
+		return `Hello, my name is ${Kennan.firstName}!`;
 	}
-];
+};
+const Keven = {
+	id: 2,
+	firstName: "Keven",
+	email: "kmummery2@wikimedia.org",
+	gender: "M"
+};
+const Gannie = {
+	id: 3,
+	firstName: "Gannie",
+	email: "gmartinson3@illinois.edu",
+	gender: "M"
+};
+const Antonietta = {
+	id: 4,
+	firstName: "Antonietta",
+	email: "adaine5@samsung.com",
+	gender: "F",
+	multiplyNums: function(num1, num2) {
+		return num1 * num2;
+	}
+};
+
 // ==== Challenge 2: Reading Object Data ====
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log(intern[0].firstName);
+console.log(Mitzi.firstName);
 // Kennan's ID
-console.log(intern[1].id);
+console.log(Kennan.id);
 // Keven's email
-console.log(intern[2].email);
+console.log(Keven.email);
 // Gannie's name
-console.log(intern[3].firstName);
+console.log(Gannie.firstName);
 // Antonietta's Gender
-console.log(intern[4].gender);
+console.log(Antonietta.gender);
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-// console.log(kennan.speak());
-console.log(intern[1].speak());
 
+console.log(Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
-console.log(intern[4].multiplyNums(3, 4));
+console.log(Antonietta.multiplyNums(3, 4));
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
 // ==== Stretch Challenge: Nested Objects and the this keyword ====
